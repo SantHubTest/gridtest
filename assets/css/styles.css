@@ -10,10 +10,13 @@ body{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas: 
-    "header navbar navbar navbar navbar  nav nav nav"
-    "aside aside main main main main secondaside secondaside"
-    "aside aside main main main main secondaside secondaside"
-    "aside aside footer footer footer footer footer footer"
+    "header navbar navbar navbar navbar  nav nav nav nav "
+    "aside aside main main main main publicidadimg publicidad publicidad"
+    "aside aside main main main main publicidadimg publicidad publicidad"
+    "aside aside main main main main publicidadimg2 publicidad2 publicidad2 "
+    "aside aside main main main main secondaside secondaside secondaside"
+    "aside aside main main main main secondaside secondaside secondaside"
+    "aside aside footer footer footer footer footer footer footer"
     ;
 }
 .container .header{
@@ -29,6 +32,11 @@ body{
 .container .nav{
     background-color: #242526;
     grid-area: nav;
+}
+
+.container .nav ul li a:hover{
+    background-color: red;
+
 }
 
 .container .aside{
@@ -67,9 +75,73 @@ body{
     margin: 3px;
 }
 
+.container .publicidad{
+    grid-area: publicidad;
+}
+
+.container  .publicidadimg{
+    grid-area: publicidadimg;
+}
+
+.container .publicidadimg img{
+    width: 160px;
+    border-radius: 30px;
+}
+
+.container .publicidad  p{
+    text-align: left;
+    color:  white;
+}
+
+.container .publicidad a{
+    text-decoration: none;
+}
+
+.container .publicidadimg:hover{
+    background-color: #303031;
+
+}
+
+.container .publicidadimg li:hover{
+    background-color: #303031;
+}
+
+.container .publicidadimg a:hover{
+    background-color: #303031;
+}
+
+.container .publicidadimg2{
+    grid-area: publicidadimg2;
+}
+
+.container .publicidadimg2 img{
+    width: 160px;
+    height: 115px;
+    border-radius: 30px;
+}
+
+.container .publicidad2 p{
+    color: white;
+}
+
+.container .publicidad2 a{
+    text-decoration: none;
+}
+
+.container .publicidad2_:hover{
+    background-color: red;
+}
+
 .container .secondaside{
-    background-color: bisque;
-    grid-area: secondaside;
+    grid-area: secondaside
+}
+
+
+
+.container .secondaside li{
+    color: white;
+    margin-top: 10px;
+    margin: 16px 0;
 }
 
 .container .footer{
