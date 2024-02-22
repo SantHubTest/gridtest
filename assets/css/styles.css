@@ -8,16 +8,16 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-areas: 
-    "header navbar navbar navbar navbar  nav nav nav nav "
-    "aside aside main main main main publicidadimg publicidad publicidad"
-    "aside aside main main main main publicidadimg publicidad publicidad"
-    "aside aside main main main main publicidadimg2 publicidad2 publicidad2 "
-    "aside aside main main main main secondaside secondaside secondaside"
-    "aside aside main main main main secondaside secondaside secondaside"
-    "aside aside footer footer footer footer footer footer footer"
-    ;
+    "header navbar navbar navbar navbar  nav nav nav  "
+    "aside aside main main main main main main "
+    "aside aside main main main main publicidadimg publicidad "
+    "aside aside main main main main publicidadimg2 publicidad2  "
+    "aside aside main main main main publicidadimg2 publicidad2 "
+    "aside aside main main main main secondaside secondaside "
+    "aside aside main main main main secondaside secondaside "
+    "aside aside footer footer footer footer footer footer ";
 }
 .container .header{
     background-color: #242526;
@@ -29,15 +29,17 @@ body{
     grid-area: navbar;
 }
 
+
+.container .navbar li:hover{
+    background-color: black;
+}
+
+
 .container .nav{
     background-color: #242526;
     grid-area: nav;
 }
 
-.container .nav ul li a:hover{
-    background-color: red;
-
-}
 
 .container .aside{
     grid-area: aside;
@@ -75,67 +77,60 @@ body{
     margin: 3px;
 }
 
-.container .publicidad{
+.container .contpu{
     grid-area: publicidad;
 }
 
-.container  .publicidadimg{
-    grid-area: publicidadimg;
-}
 
-.container .publicidadimg img{
+.contpu .publicidadimg img{
     width: 160px;
     border-radius: 30px;
 }
 
-.container .publicidad  p{
+ .contpu .publicidad  p{
     text-align: left;
     color:  white;
 }
 
-.container .publicidad a{
+ .contpu .publicidad a{
     text-decoration: none;
 }
 
-.container .publicidadimg:hover{
-    background-color: #303031;
-
+.contpu  .publicidadimg li{
+    list-style-type: none;
 }
 
-.container .publicidadimg li:hover{
-    background-color: #303031;
-}
-
-.container .publicidadimg a:hover{
+.container .contpu:hover{
     background-color: #303031;
 }
 
-.container .publicidadimg2{
+
+.contpu2 {
     grid-area: publicidadimg2;
 }
 
-.container .publicidadimg2 img{
+ .contpu2 .publicidadimg2 img{
     width: 160px;
     height: 115px;
     border-radius: 30px;
 }
 
-.container .publicidad2 p{
+ .contpu2 .publicidad2 p{
     color: white;
 }
 
-.container .publicidad2 a{
+ .contpu .publicidad2 a{
     text-decoration: none;
 }
 
-.container .publicidad2_:hover{
+ .contpu2:hover{
     background-color: red;
 }
+
 
 .container .secondaside{
     grid-area: secondaside
 }
-
 
 
 .container .secondaside li{
